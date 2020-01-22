@@ -13,9 +13,9 @@ Saya sudah mendengar Brainfuck sejak tahun 2011, ketika melihat [pertanyaan di C
 
 Brainfuck adalah bahasa pemrograman esoterik yang memiliki kode rumit dan memang sengaja dibuat rumit. Dibuat oleh Urban Müller, seorang mahasiswa fisika Swiss.
 
-Brainfuck terkenal karena terlalu minimalis, hanya terdiri dari delapan perintah, yaitu `<`, `>`, `+`, `-`, `[`, `]`, `,` dan `.`.
-
 ## Cara kerja Brainfuck?
+
+Brainfuck terkenal karena terlalu minimalis, hanya terdiri dari delapan perintah, yaitu `<`, `>`, `+`, `-`, `[`, `]`, `,` dan `.`.
 
 Delapan perintah yang ada di Brainfuck dibagi menjadi 4 bagian :
 
