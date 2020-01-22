@@ -3,6 +3,8 @@ layout: post
 title:  "Cara Kerja Brainfuck"
 ---
 
+![Brainfuck](/assets/img/brainfuck.png)
+
 Saya sudah mendengar Brainfuck sejak tahun 2011, ketika melihat [pertanyaan di CodeGolf](https://codegolf.stackexchange.com/questions/84/interpret-brainf), salah satu produk dari [StackOverflow](https://stackoverflow.com).
 
 ## Lalu apa itu Brainfuck?
