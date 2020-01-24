@@ -56,6 +56,9 @@ GEM
       jekyll (>= 3.0, < 5.0)
     kramdown (1.17.0)
     liquid (4.0.3)
+    liquid_reading_time (1.1.3)
+      liquid (>= 2.6, < 5.0)
+      nokogiri (~> 1.6)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -92,6 +95,7 @@ DEPENDENCIES
   jekyll-remote-theme
   jekyll-seo-tag
   jemoji
+  liquid_reading_time
 
 BUNDLED WITH
    2.1.4

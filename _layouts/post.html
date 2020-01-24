@@ -4,17 +4,13 @@ layout: default
 
 <div class="post">
   <div class="post-info">
-    <span>Written by</span>
-    {% if page.author %}
-        {{ page.author }}
-    {% else %}
-        {{ site.author.name }}
+    {% if page.date %}
+      <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
+      <br>
     {% endif %}
 
-    {% if page.date %}
-      <br>
-      <span>on&nbsp;</span><time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
-    {% endif %}
+    {% capture time %}{{ content | reading_time }}{% endcapture %}
+    This article will take {{ time }} {% if time == '1' %}minute{% else %}minutes{% endif %} to read.
   </div>
 
   <h1 class="post-title">{{ page.title }}</h1>
