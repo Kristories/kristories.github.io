@@ -9,8 +9,8 @@ layout: default
       <br>
     {% endif %}
 
-    {% capture time %}{{ content | reading_time }}{% endcapture %}
-    This article will take {{ time }} {% if time == '1' %}minute{% else %}minutes{% endif %} to read.
+
+    This article will take <span>{{ content | reading_time }}</span> to read.
   </div>
 
   <h1 class="post-title">{{ page.title }}</h1>

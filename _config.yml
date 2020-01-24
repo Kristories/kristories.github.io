@@ -29,7 +29,6 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jemoji
-  - liquid_reading_time
 
 # Permalinks
 permalink:      /:year-:month-:day/:title
