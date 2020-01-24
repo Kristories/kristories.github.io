@@ -6,11 +6,7 @@ layout: default
   <div class="post-info">
     {% if page.date %}
       <time datetime="{{ page.date }}">{{ page.date | date: "%B %d, %Y" }}</time>
-      <br>
     {% endif %}
-
-
-    This article will take <span>{{ content | reading_time }}</span> to read.
   </div>
 
   <h1 class="post-title">{{ page.title }}</h1>
