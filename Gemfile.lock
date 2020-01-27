@@ -39,6 +39,8 @@ GEM
       safe_yaml (~> 1.0)
     jekyll-feed (0.13.0)
       jekyll (>= 3.7, < 5.0)
+    jekyll-menus (0.6.1)
+      jekyll (>= 3.6, < 5.0)
     jekyll-paginate (1.1.0)
     jekyll-remote-theme (0.4.1)
       addressable (~> 2.0)
@@ -87,11 +89,14 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  jekyll (~> 3.8.6)
   jekyll-feed
+  jekyll-menus
   jekyll-paginate
   jekyll-remote-theme
   jekyll-seo-tag
   jemoji
+  tzinfo-data
 
 BUNDLED WITH
    2.1.4
