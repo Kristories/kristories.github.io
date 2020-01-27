@@ -1,43 +1,42 @@
 # Site settings
-title:          "Wahyu Kristianto"
-description:    "Creator, Author, Husband, Dad • Making ♥ with thinking & typing •"
-baseurl:        ""
-url:            "https://wahyukristianto.com"
+title: "Wahyu Kristianto"
+description: "Creator, Author, Husband, Dad • Making ♥ with thinking & typing •"
+baseurl: ""
+url: "https://wahyukristianto.com"
 
 # Google Analytics
 google_analytics: UA-156793259-1
 
 # Author
-author:  "Wahyu Kristianto"
-email:        w.kristories@gmail.com
+author:
+  name: "Wahyu Kristianto"
+  url: https://wahyukristianto.com
+  email: w.kristories@gmail.com
 
 # Build settings
-defaults:
-  - scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default" # this ensures all content renders with layouts/default.html
+markdown:       kramdown
+include:
+  - _pages
+
+# Assets
+sass:
+  sass_dir:     _sass
+  style:        compressed
+
+# Gems
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jemoji
 
 # Permalinks
 permalink:      /blog/post/:title
 paginate:       5
 paginate_path: /blog/page/:num/
 
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-seo-tag
-  - jemoji
-  - jekyll-menus
+# Excludes
+exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
 
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# Disqus (Set to your disqus id)
+#disqus:         jekyll-tale
