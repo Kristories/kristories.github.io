@@ -2,7 +2,7 @@
 title:          "Wahyu Kristianto"
 description:    "Creator, Author, Husband, Dad • Making ♥ with thinking & typing •"
 baseurl:        ""
-url:            "http://wahyukristianto.com"
+url:            "https://wahyukristianto.com"
 
 # Google Analytics
 google_analytics: UA-156793259-1
@@ -10,7 +10,7 @@ google_analytics: UA-156793259-1
 # Author
 author:
   name:         Wahyu Kristianto
-  url:          http://wahyukristianto.com
+  url:          https://wahyukristianto.com
   email:        w.kristories@gmail.com
 
 # Build settings
