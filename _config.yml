@@ -8,35 +8,36 @@ url:            "https://wahyukristianto.com"
 google_analytics: UA-156793259-1
 
 # Author
-author:
-  name:         Wahyu Kristianto
-  url:          https://wahyukristianto.com
-  email:        w.kristories@gmail.com
+author:  "Wahyu Kristianto"
+email:        w.kristories@gmail.com
 
 # Build settings
-markdown:       kramdown
-include:
-  - _pages
-
-# Assets
-sass:
-  sass_dir:     _sass
-  style:        compressed
-
-# Gems
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-seo-tag
-  - jemoji
+defaults:
+  - scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      layout: "default" # this ensures all content renders with layouts/default.html
 
 # Permalinks
 permalink:      /blog/post/:title
 paginate:       5
 paginate_path: /blog/page/:num/
 
-# Excludes
-exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+  - jemoji
+  - jekyll-menus
 
-# Disqus (Set to your disqus id)
-#disqus:         jekyll-tale
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

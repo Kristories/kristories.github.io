@@ -1,16 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+{% include head.html %}
 
-  {% include head.html %}
+<!-- Add your site or application content here -->
+<p>{{ content }}</p>
 
-  <body>
-
-    {% include navigation.html %}
-
-    <main>
-      {{ content }}
-    </main>
-
-    {% include footer.html %}
-  </body>
-</html>
+{% include footer.html %}
