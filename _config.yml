@@ -31,7 +31,7 @@ plugins:
   - jemoji
 
 # Permalinks
-permalink:      /:year-:month-:day/:title
+permalink:      /blog/post/:title
 paginate:       5
 paginate_path: /blog/page/:num/
 
