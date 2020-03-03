@@ -7,7 +7,7 @@ Hari ini [Taylor](https://twitter.com/taylorotwell) telah merilis bersi mayor [L
 
 
 
-#[Airlock](https://laravel.com/docs/7.x/airlock)
+# [Airlock](https://laravel.com/docs/7.x/airlock)
 
 Jika kalian sering berhubungan dengan token API ataupun SPA (single page applications), selamat! Laravel kini telah memiliki paket resmi yang memiliki dua fitur, yaitu API Token dan otentikasi SPA.
 
@@ -21,11 +21,11 @@ Fitur ini menyimpan token API pengguna dalam tabel database tunggal dan mengaute
 
 Airlock juga menawarkan cara sederhana untuk otentikasi SPA yang berkomunikasi dengan API. SPA ini dapat digunakan bersama-sama pada aplikasi Laravel, ataupun yang dibuat terpisah.
 
-Berbeda dengan API Token, otentikasi SPA tidak menggunakan token apa pun. Airlock menggunakan otentikasi bawaan Laravel, yang pastinya memiliki perlindungan CSRF, otentikasi sesi, serta melindungi terhadap kebocoran kredensial otentikasi melalui XSS. 
+Berbeda dengan API Token, otentikasi SPA tidak menggunakan token apa pun. Airlock menggunakan otentikasi bawaan Laravel, yang pastinya memiliki perlindungan CSRF, otentikasi sesi, serta melindungi terhadap kebocoran kredensial otentikasi melalui XSS.
 
 
 
-#[Custom Casts](https://laravel.com/docs/7.x/eloquent-mutators#custom-casts)
+# [Custom Casts](https://laravel.com/docs/7.x/eloquent-mutators#custom-casts)
 
 Siapa yang tidak menggunakan property `$casts`? Sejauh ini, casting banyak membantu untuk merubah tipe data. Pada Laravel 7, kini telah hadir Custom Cast yang dapat digunakan untuk membuat tipe data sendiri.
 
@@ -62,7 +62,7 @@ protected $casts = [
 
 
 
-#[Query Time Casting](https://laravel.com/docs/7.x/eloquent-mutators#query-time-casting)
+# [Query Time Casting](https://laravel.com/docs/7.x/eloquent-mutators#query-time-casting)
 
 Query Time Casting dapat digunakan untuk menerapkan cast saat menjalankan query, seperti saat memilih nilai mentah dari tabel, dengan contoh sebagai berikut :
 
@@ -78,11 +78,11 @@ $users = User::select([
 
 
 
-#[Blade Component](https://laravel.com/docs/7.x/blade#components)
+# [Blade Component](https://laravel.com/docs/7.x/blade#components)
 
-Pernah menggunakan **[Laravel Livewire](https://laravel-livewire.com/)** yang dibuat oleh **[Caleb Porzio](https://twitter.com/calebporzio)**? Atau pernah menggunakan **[Blade-X](https://docs.spatie.be/laravel-blade-x/v2/introduction/)** yang dibuat oleh **[Spatie](https://spatie.be/)**? Ya, Blade kini memiliki fitur Component yang mirip dengan Laravel Livewire dan Blade-X. 
+Pernah menggunakan **[Laravel Livewire](https://laravel-livewire.com/)** yang dibuat oleh **[Caleb Porzio](https://twitter.com/calebporzio)**? Atau pernah menggunakan **[Blade-X](https://docs.spatie.be/laravel-blade-x/v2/introduction/)** yang dibuat oleh **[Spatie](https://spatie.be/)**? Ya, Blade kini memiliki fitur Component yang mirip dengan Laravel Livewire dan Blade-X.
 
-**Components** dan **slots** telah dirombak ulang, untuk memungkinkan rendering berbasis tag, manajemen atribut, kelas komponen, komponen tampilan inline, dan lainnya. Component memiliki manfaat untuk membuat suatu komponen yang berhubungan dengan view. 
+**Components** dan **slots** telah dirombak ulang, untuk memungkinkan rendering berbasis tag, manajemen atribut, kelas komponen, komponen tampilan inline, dan lainnya. Component memiliki manfaat untuk membuat suatu komponen yang berhubungan dengan view.
 
 Sebagai contoh, kita dapat membuat suatu component dengan memanfaatkan Artisan :
 
@@ -125,7 +125,7 @@ Setelah mendaftarkan component dengan `Blade::component(AlertComponent::class, '
 
 
 
-#[HTTP Client](https://laravel.com/docs/7.x/http-client)
+# [HTTP Client](https://laravel.com/docs/7.x/http-client)
 
 HTTP Client adalah sebuah wrapper dari **[Guzzle](http://docs.guzzlephp.org/en/stable/)** yang memungkinkan membuat permintaan HTTP keluar untuk berkomunikasi dengan aplikasi web lainnya. Sebagai contoh :
 
@@ -144,7 +144,7 @@ return $response['id'];
 
 
 
-#[Fluent String](https://laravel.com/docs/7.x/helpers#fluent-strings)
+# [Fluent String](https://laravel.com/docs/7.x/helpers#fluent-strings)
 
 Laravel 7 memiliki helper baru yaitu Fluent String yang berfungsi manipulasi string. Berbeda dengan `Str`, Fluent String memanipulasi string lebih object-oriented, seperti :
 
@@ -157,9 +157,9 @@ Str::of('  Laravel Framework 6.x ')
 
 
 
-#[Multiple Mail Drivers](https://laravel.com/docs/7.x/mail)
+# [Multiple Mail Drivers](https://laravel.com/docs/7.x/mail)
 
-Seperti penggunaan beberapa driver database, kini Laravel 7 memungkinkan menggunakan beberapa driver mail pada satu aplikasi. 
+Seperti penggunaan beberapa driver database, kini Laravel 7 memungkinkan menggunakan beberapa driver mail pada satu aplikasi.
 
 Sebagai contoh, kita dapat menggunakan Mailgun untuk mengirim email transaksional, dan menggunakan Amazon SES untuk mengirim email massal.
 
@@ -171,17 +171,17 @@ Mail::mailer('mailgun')
 
 
 
-#[CORS](https://laravel.com/docs/7.x/routing#cors)
+# [CORS](https://laravel.com/docs/7.x/routing#cors)
 
 Laravel 7 dapat secara otomatis menanggapi permintaan CORS OPTIONS. Kita dapat mengatur konfigurasi `cors` pada config. Permintaan OPTIONS akan secara otomatis ditangani oleh middleware `HandleCors` yang sudah disertakan secara default di pada middleware global.
 
 
 
-#Artisan `test` Command
+# Artisan `test` Command
 
 ![img](https://res.cloudinary.com/dtfbvvkyp/image/upload/v1582142435/Screen_Shot_2020-02-19_at_2.00.01_PM.png)
 
-Selain `phpunit`, kita dapat menggunakan perintah Artisan `test` untuk menjalankan tes dengan UX dan informasi yang lebih baik mengenai tes yang sedang berjalan. 
+Selain `phpunit`, kita dapat menggunakan perintah Artisan `test` untuk menjalankan tes dengan UX dan informasi yang lebih baik mengenai tes yang sedang berjalan.
 
 ```bash
 php artisan test
@@ -189,7 +189,7 @@ php artisan test
 
 
 
-#Stub Customization
+# Stub Customization
 
 `artisan make` dapat digunakan untuk membuat beberapa keperluan class seperti controller, migration, request, dan lainnya. Secara default akan menggunakan stub atau template bawaan Laravel. Jika kita ingin memembuat beberapa perubahan pada default stub yang telah ada, kita dapat merubahnya dengan mempublikasikan stub sebelumnya :
 
@@ -199,7 +199,7 @@ php artisan stub:publish
 
 
 
-#[Queue `maxExceptions` Configuration](https://laravel.com/docs/7.x/queues)
+# [Queue `maxExceptions` Configuration](https://laravel.com/docs/7.x/queues)
 
 Kini, kita dapat menentukan suatu `job` dapat dijalankan kembali (jika gagal) dengan mendefinisikan `maxExceptions` :
 
