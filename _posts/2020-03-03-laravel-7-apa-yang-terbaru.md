@@ -235,4 +235,4 @@ class ProcessPodcast implements ShouldQueue
 
 
 
-Ulasan diatas ada beberapa fitur baru yang ada pada Laravel 7. Tidak hanya fitur baru, improvisasi pada fitur sebelumnya juga telah disertakan pada Laravel 7, seperti Markdown Mail Template, MySQL 8+ Database Queue, dan lainnya. Informasi detail dapat dilihat pada [dokumentasi Laravel 7](https://laravel.com/docs/7.x).
+Ulasan diatas adalah beberapa fitur baru yang ada pada Laravel 7. Tidak hanya fitur baru, improvisasi pada fitur sebelumnya juga telah disertakan pada Laravel 7, seperti Markdown Mail Template, MySQL 8+ Database Queue, dan lainnya. Informasi detail dapat dilihat pada [dokumentasi Laravel 7](https://laravel.com/docs/7.x).
