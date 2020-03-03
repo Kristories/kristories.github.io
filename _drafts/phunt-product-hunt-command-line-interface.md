@@ -1,25 +1,6 @@
 ---
 layout: post
-title: Phunt - Product Hunt Command Line Interface
+title: Laravel 7, Apa yang Terbaru?
 
 ---
-<a href="https://www.producthunt.com/posts/medium-widget-2?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-medium-widget-2" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=132189&theme=light" alt="Medium Widget - Unofficial articles feed widget for Medium | Product Hunt Embed" style="width: 250px; height: 54px;" width="250px" height="54px" /></a>
-
-[![asciicast](https://asciinema.org/a/33953.svg)](https://asciinema.org/a/33953)
-
-Sejak mendapatkan invitation dari [Product Hunt](https://www.producthunt.com), saya selalu mengikuti berbagai macam tren teknologi yang ada disana. Setiap harinya setelah pekerjaan saya sudah selesai, saya menyempatkan diri berselancar ke Product Hunt, [Hacker News](https://news.ycombinator.com), dan beberapa website teknologi lainnya.
-
-## Light vs Dark
-
-Saya cenderung menggunakan dark theme di semua aplikasi yang selalu saya gunakan, seperti IDE dan terminal.
-
-Dengan keterbiasaan menggunakan dark theme, membuat mata saya sakit ketika mengunjungi Product Hunt, ataupun website lainnya yang memiliki light theme.
-
-Akhirnya, saya mencoba membuat satu proyek open source versi iseng dengan nama ["Phunt"](https://github.com/Kristories/phunt). Tujuannya adalah untuk berselancar di Product Hunt hanya dengan menggunakan terminal (tentu saja dengan dark theme).
-
----
-
-## Update
-
-- [Phunt is the #5 Product of the Day](https://www.producthunt.com/posts/phunt) on [@ProductHunt](https://twitter.com/ProductHunt) for January 18, 2016! :tada:
-- Mentioned in [Awesome Vorpal](https://github.com/vorpaljs/awesome-vorpal)
+Test
