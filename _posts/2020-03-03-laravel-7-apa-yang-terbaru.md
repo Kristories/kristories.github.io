@@ -7,7 +7,7 @@ Hari ini [Taylor](https://twitter.com/taylorotwell) telah merilis bersi mayor [L
 
 
 
-## [Airlock](https://laravel.com/docs/7.x/airlock)
+#[Airlock](https://laravel.com/docs/7.x/airlock)
 
 Jika kalian sering berhubungan dengan token API ataupun SPA (single page applications), selamat! Laravel kini telah memiliki paket resmi yang memiliki dua fitur, yaitu API Token dan otentikasi SPA.
 
@@ -25,7 +25,7 @@ Berbeda dengan API Token, otentikasi SPA tidak menggunakan token apa pun. Airloc
 
 
 
-## [Custom Casts](https://laravel.com/docs/7.x/eloquent-mutators#custom-casts)
+#[Custom Casts](https://laravel.com/docs/7.x/eloquent-mutators#custom-casts)
 
 Siapa yang tidak menggunakan property `$casts`? Sejauh ini, casting banyak membantu untuk merubah tipe data. Pada Laravel 7, kini telah hadir Custom Cast yang dapat digunakan untuk membuat tipe data sendiri.
 
@@ -40,29 +40,11 @@ use Illuminate\Contracts\Database\Eloquent\CastsAttributes;
 
 class Json implements CastsAttributes
 {
-    /**
-     * Cast the given value.
-     *
-     * @param  \Illuminate\Database\Eloquent\Model  $model
-     * @param  string  $key
-     * @param  mixed  $value
-     * @param  array  $attributes
-     * @return array
-     */
     public function get($model, $key, $value, $attributes)
     {
         return json_decode($value, true);
     }
 
-    /**
-     * Prepare the given value for storage.
-     *
-     * @param  \Illuminate\Database\Eloquent\Model  $model
-     * @param  string  $key
-     * @param  array  $value
-     * @param  array  $attributes
-     * @return string
-     */
     public function set($model, $key, $value, $attributes)
     {
         return json_encode($value);
@@ -80,7 +62,7 @@ protected $casts = [
 
 
 
-## [Query Time Casting](https://laravel.com/docs/7.x/eloquent-mutators#query-time-casting)
+#[Query Time Casting](https://laravel.com/docs/7.x/eloquent-mutators#query-time-casting)
 
 Query Time Casting dapat digunakan untuk menerapkan cast saat menjalankan query, seperti saat memilih nilai mentah dari tabel, dengan contoh sebagai berikut :
 
@@ -96,7 +78,7 @@ $users = User::select([
 
 
 
-## [Blade Component](https://laravel.com/docs/7.x/blade#components)
+#[Blade Component](https://laravel.com/docs/7.x/blade#components)
 
 Pernah menggunakan **[Laravel Livewire](https://laravel-livewire.com/)** yang dibuat oleh **[Caleb Porzio](https://twitter.com/calebporzio)**? Atau pernah menggunakan **[Blade-X](https://docs.spatie.be/laravel-blade-x/v2/introduction/)** yang dibuat oleh **[Spatie](https://spatie.be/)**? Ya, Blade kini memiliki fitur Component yang mirip dengan Laravel Livewire dan Blade-X. 
 
@@ -119,38 +101,15 @@ use Illuminate\View\Component;
 
 class Alert extends Component
 {
-    /**
-     * The alert type.
-     *
-     * @var string
-     */
     public $type;
-
-    /**
-     * The alert message.
-     *
-     * @var string
-     */
     public $message;
 
-    /**
-     * Create the component instance.
-     *
-     * @param  string  $type
-     * @param  string  $message
-     * @return void
-     */
     public function __construct($type, $message)
     {
         $this->type = $type;
         $this->message = $message;
     }
 
-    /**
-     * Get the view / contents that represent the component.
-     *
-     * @return \Illuminate\View\View|string
-     */
     public function render()
     {
         return view('components.alert');
@@ -166,7 +125,7 @@ Setelah mendaftarkan component dengan `Blade::component(AlertComponent::class, '
 
 
 
-## [HTTP Client](https://laravel.com/docs/7.x/http-client)
+#[HTTP Client](https://laravel.com/docs/7.x/http-client)
 
 HTTP Client adalah sebuah wrapper dari **[Guzzle](http://docs.guzzlephp.org/en/stable/)** yang memungkinkan membuat permintaan HTTP keluar untuk berkomunikasi dengan aplikasi web lainnya. Sebagai contoh :
 
@@ -185,7 +144,7 @@ return $response['id'];
 
 
 
-## [Fluent String](https://laravel.com/docs/7.x/helpers#fluent-strings)
+#[Fluent String](https://laravel.com/docs/7.x/helpers#fluent-strings)
 
 Laravel 7 memiliki helper baru yaitu Fluent String yang berfungsi manipulasi string. Berbeda dengan `Str`, Fluent String memanipulasi string lebih object-oriented, seperti :
 
@@ -198,7 +157,7 @@ Str::of('  Laravel Framework 6.x ')
 
 
 
-## [Multiple Mail Drivers](https://laravel.com/docs/7.x/mail)
+#[Multiple Mail Drivers](https://laravel.com/docs/7.x/mail)
 
 Seperti penggunaan beberapa driver database, kini Laravel 7 memungkinkan menggunakan beberapa driver mail pada satu aplikasi. 
 
@@ -212,13 +171,13 @@ Mail::mailer('mailgun')
 
 
 
-## [CORS](https://laravel.com/docs/7.x/routing#cors)
+#[CORS](https://laravel.com/docs/7.x/routing#cors)
 
 Laravel 7 dapat secara otomatis menanggapi permintaan CORS OPTIONS. Kita dapat mengatur konfigurasi `cors` pada config. Permintaan OPTIONS akan secara otomatis ditangani oleh middleware `HandleCors` yang sudah disertakan secara default di pada middleware global.
 
 
 
-## Artisan `test` Command
+#Artisan `test` Command
 
 ![img](https://res.cloudinary.com/dtfbvvkyp/image/upload/v1582142435/Screen_Shot_2020-02-19_at_2.00.01_PM.png)
 
@@ -230,7 +189,7 @@ php artisan test
 
 
 
-## Stub Customization
+#Stub Customization
 
 `artisan make` dapat digunakan untuk membuat beberapa keperluan class seperti controller, migration, request, dan lainnya. Secara default akan menggunakan stub atau template bawaan Laravel. Jika kita ingin memembuat beberapa perubahan pada default stub yang telah ada, kita dapat merubahnya dengan mempublikasikan stub sebelumnya :
 
@@ -240,7 +199,7 @@ php artisan stub:publish
 
 
 
-## [Queue `maxExceptions` Configuration](https://laravel.com/docs/7.x/queues)
+#[Queue `maxExceptions` Configuration](https://laravel.com/docs/7.x/queues)
 
 Kini, kita dapat menentukan suatu `job` dapat dijalankan kembali (jika gagal) dengan mendefinisikan `maxExceptions` :
 
@@ -251,25 +210,9 @@ namespace App\Jobs;
 
 class ProcessPodcast implements ShouldQueue
 {
-    /**
-     * The number of times the job may be attempted.
-     *
-     * @var int
-     */
     public $tries = 25;
-
-    /**
-     * The maximum number of exceptions to allow before failing.
-     *
-     * @var int
-     */
     public $maxExceptions = 3;
 
-    /**
-     * Execute the job.
-     *
-     * @return void
-     */
     public function handle()
     {
         Redis::throttle('key')->allow(10)->every(60)->then(function () {
@@ -284,7 +227,11 @@ class ProcessPodcast implements ShouldQueue
 
 
 
+
+
 ---
+
+
 
 
 
