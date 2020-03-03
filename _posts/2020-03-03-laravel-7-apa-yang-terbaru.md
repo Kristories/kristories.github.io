@@ -3,7 +3,7 @@ layout: post
 title:  "Laravel 7, Apa yang Terbaru?"
 ---
 
-Hari ini [Taylor](https://twitter.com/taylorotwell) telah merilis bersi mayor [Laravel 7](https://laravel.com/docs/7.x/), dan satya akan membahas beberapa fitur baru yang ada di Laravel versi terbaru.
+Hari ini [**Taylor**](https://twitter.com/taylorotwell) telah merilis versi mayor [**Laravel 7**](https://laravel.com/docs/7.x/), dan kita akan membahas beberapa fitur baru yang ada di Laravel versi terbaru.
 
 
 
