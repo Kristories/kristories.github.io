@@ -1,6 +1,8 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
 ---
 
-@import 'tale';
-@import 'feather';
+@import "variables";
+@import "bootstrap/scss/bootstrap";
+
+@import "feather";
+@import "custom";

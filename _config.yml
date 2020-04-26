@@ -20,8 +20,9 @@ include:
 
 # Assets
 sass:
-  sass_dir:     _sass
-  style:        compressed
+  load_paths:
+    - _sass
+    - node_modules
 
 # Gems
 plugins:
