@@ -1,0 +1,45 @@
+.pagination {
+  display: block;
+  border-top: .5px solid lighten($dark, 10%);
+  font-family: $font-family-serif;
+  padding-top: 2rem;
+  position: relative;
+  text-align: center;
+
+  span {
+    color: $light;
+    font-size: 1.1rem;
+  }
+
+  .top {
+    @include transition(all .3s ease-out);
+    color: $light;
+    font-family: $font-family-serif;
+    font-size: 1.1rem;
+    opacity: .6;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .arrow {
+    @include transition(all .3s ease-out);
+    color: $light;
+    position: absolute;
+
+    &:hover,
+    &:focus {
+      opacity: .6;
+      text-decoration: none;
+    }
+  }
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    right: 0;
+  }
+}

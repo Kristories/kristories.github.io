@@ -10,7 +10,7 @@ $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
 $black:    #000 !default;
 
-$blue:    #0984e3 !default;
+$blue:    #74b9ff !default;
 $indigo:  #a29bfe !default;
 $purple:  #6c5ce7 !default;
 $pink:    #e84393 !default;
@@ -20,7 +20,9 @@ $yellow:  #fdcb6e !default;
 $green:   #00b894 !default;
 $teal:    #00cec9 !default;
 $cyan:    #81ecec !default;
-$dark:    $gray-700 !default;
+
+$light:   $gray-300 !default;
+$dark:    #3f3f3f !default;
 
 $font-family-sans-serif: 'Roboto', sans-serif !default;
 $font-family-serif: 'Roboto Slab', serif !default;
