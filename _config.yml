@@ -14,7 +14,7 @@ author:
   email: w.kristories@gmail.com
 
 # Build settings
-markdown:       kramdown
+markdown: kramdown
 include:
   - _pages
 
@@ -23,6 +23,9 @@ sass:
   load_paths:
     - _sass
     - node_modules
+  style: compressed
+
+repository: Kristories/kristories.github.io
 
 # Gems
 plugins:
@@ -30,14 +33,11 @@ plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jemoji
+  - jekyll-github-metadata
 
 # Permalinks
 permalink:      /blog/post/:title
 paginate:       5
 paginate_path: /blog/page/:num/
 
-# Excludes
-exclude: [ Gemfile, Gemfile.lock, tale.gemspec ]
-
-# Disqus (Set to your disqus id)
-#disqus:         jekyll-tale
+exclude: [ BU ]
