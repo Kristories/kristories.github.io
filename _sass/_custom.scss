@@ -30,16 +30,6 @@ hr{
   border-color: lighten($dark, 10%);
 }
 
-
-
-
-
-/************** Code **************/
-
-
-
-
-
 footer {
   font-family: $font-family-serif;
   padding: 2rem 0;
@@ -60,7 +50,6 @@ footer {
     background-color: darken($dark, 20%);
     @extend .text-white;
 }
-
 
 .card-columns {
   @include media-breakpoint-only(lg) {
