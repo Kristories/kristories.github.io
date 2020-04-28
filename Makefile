@@ -1,15 +1,19 @@
-NPM := npm
-VENDOR_DIR := assets/vendor/
-JEKYLL := jekyll
+JEKYLL      := jekyll
+NPM         := npm
+ASSETS_DIR  := assets/
+SASS_DIR    := _sass/
+JS_DIR      := assets/js/
 
 install:
+	bundle
 	$(NPM) install
 
 include-npm-deps:
-	mkdir -p $(VENDOR_DIR)
-	cp node_modules/jquery/dist/jquery.min.js $(VENDOR_DIR)
-	cp node_modules/popper.js/dist/umd/popper.min.js $(VENDOR_DIR)
-	cp node_modules/bootstrap/dist/js/bootstrap.min.js $(VENDOR_DIR)
+	mkdir -p $(JS_DIR)
+	cp node_modules/jquery/dist/jquery.min.js $(JS_DIR)
+	cp node_modules/popper.js/dist/umd/popper.min.js $(JS_DIR)
+	cp node_modules/bootstrap/dist/js/bootstrap.min.js $(JS_DIR)
+	cp -R node_modules/bootstrap/scss $(SASS_DIR)bootstrap
 
 build: install include-npm-deps
 	$(JEKYLL) build
