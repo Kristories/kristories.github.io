@@ -3,14 +3,15 @@ layout: post
 title:  "Awesome Guidelines"
 ---
 
-![](https://wahyukristianto.com/awesome-guidelines/assets/header.png)
+![Awesome Guidelines](https://wahyukristianto.com/awesome-guidelines/assets/header.png)
 
-Saya baru mempublikasikan repo ["Awesome Guidelines"](https://github.com/Kristories/awesome-guidelines) di GitHub.
+I just published ["Awesome Guidelines"](https://github.com/Kristories/awesome-guidelines), a set of guidelines for a specific programming language that recommend [programming style, practices, and methods](https://en.wikipedia.org/wiki/Coding_conventions) for each aspect of a program written in that language.
 
-Harapannya adalah menjadi salah satu daftar sumber terbuka sebagai acuan para developer dunia untuk mencari [*coding style conventions* dan standarisasi](https://en.wikipedia.org/wiki/Coding_conventions).
 
 ---
 
 ## Update
 
-Sangat mengejutkan, ternyata repo ini menjadi [trending #1 di GitHub](https://github.com/trending), dan mencapai 4k stars. :smile:
+Very surprising, this repo has been [trending on GitHub](http://web.archive.org/web/20170717234302/https://github.com/trending), and now reaches 4k stars.  Thanks to all [contributors](https://github.com/Kristories/awesome-guidelines/graphs/contributors), you're awesome and wouldn't be possible without you!
+
+![Contributors](https://contributors-img.web.app/image?repo=Kristories/awesome-guidelines)
