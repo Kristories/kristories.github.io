@@ -1,0 +1,61 @@
+body{
+  font-family: $font-family-serif;
+}
+
+img {
+  display: block;
+  margin: 0 0 1rem;
+  max-width: 100%;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: darken($dark, 5%);
+}
+
+.card{
+    img{
+        border-radius: 0;
+    }
+}
+
+a, a:hover{
+  text-decoration: none !important;
+  color: $primary !important;
+
+  pre, code{
+    color: #fdce93;
+  }
+}
+
+hr{
+  border-color: lighten($dark, 10%);
+}
+
+footer {
+  font-family: $font-family-serif;
+  padding: 2rem 0;
+  text-align: center;
+
+  span {
+    color: $gray-800;
+    font-size: .8rem;
+  }
+}
+
+.bg-dark-10{
+    background-color: darken($dark, 10%);
+    @extend .text-white;
+}
+
+.bg-dark-20{
+    background-color: darken($dark, 20%);
+    @extend .text-white;
+}
+
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 3;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 3;
+  }
+}
