@@ -2,7 +2,7 @@
 title: "Wahyu Kristianto"
 description: "Creator, Author, Husband, Dad • Making ♥ with thinking & typing •"
 baseurl: ""
-url: "https://wahyukristianto.com"
+url: "https://blog.wahyukristianto.com"
 
 # Google Analytics
 google_analytics: UA-156793259-1
@@ -36,8 +36,8 @@ plugins:
   - jekyll-github-metadata
 
 # Permalinks
-permalink:      /blog/post/:title
+permalink:      /post/:title
 paginate:       5
-paginate_path: /blog/page/:num/
+paginate_path: /page/:num/
 
 exclude: [ BU ]
