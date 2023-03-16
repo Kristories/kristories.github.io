@@ -13,5 +13,4 @@ group :jekyll_plugins do
   gem "jemoji"
   gem "jekyll-menus"
   gem "jekyll-github-metadata"
-  gem "jekyll-mermaid
 end

@@ -27,9 +27,6 @@ sass:
 
 repository: Kristories/kristories.github.io
 
-mermaid:
-  src: 'assets/js/mermaid.js'
-
 # Gems
 plugins:
   - jekyll-feed
@@ -37,7 +34,6 @@ plugins:
   - jekyll-seo-tag
   - jemoji
   - jekyll-github-metadata
-  - jekyll-mermaid
 
 # Permalinks
 permalink:      /post/:title
