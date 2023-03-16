@@ -7,13 +7,13 @@ title:  "Just a Blogging Platform"
 
 ## Jekyll
 
-{% mermaid %}
+<div class="mermaid">
 graph TD;
     A-->B;
     A-->C;
     B-->D;
     C-->D;
-{% endmermaid %}
+</div>
 
 With the advent of [Jekyll](http://jekyllrb.com), a static site generator, many developers are shifting their blogs to GitHub. Writing a blog with Jekyll is relatively simple.
 
