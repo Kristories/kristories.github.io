@@ -12,19 +12,17 @@ title:  "The CAP Theorem"
 ### What is the CAP Theorem?
 The CAP theorem was first introduced by computer scientist Eric Brewer in 2000. It states that in a distributed system, you can only have two out of the following three properties:
 
-Consistency: Every read receives the most recent write or an error
-Availability: Every request receives a response, without guarantee that it contains the most recent version of the information
-Partition Tolerance: The system continues to function even when network partitions occur
-In other words, when building a distributed system, you can only optimize for two out of the three properties. You have to make trade-offs and choose the properties that are most important for your system.
+- **Consistency**
 
-### Consistency
-Consistency means that every read operation from a distributed system returns the most recent write operation or an error. In other words, all nodes in the system agree on the current state of the data. Achieving consistency can be challenging, especially in a distributed system where nodes are located in different regions and time zones.
+    Consistency means that every read operation from a distributed system returns the most recent write operation or an error. In other words, all nodes in the system agree on the current state of the data. Achieving consistency can be challenging, especially in a distributed system where nodes are located in different regions and time zones.
 
-### Availability
-Availability means that every request to a distributed system gets a response. However, the response may not contain the most recent data. This is because some nodes may be lagging behind in updates due to network delays or other factors.
+- **Availability**
 
-### Partition Tolerance
-Partition tolerance means that the system continues to operate even when there is a network partition. In other words, the system can continue to function when some nodes are cut off from the rest of the network.
+    Availability means that every request to a distributed system gets a response. However, the response may not contain the most recent data. This is because some nodes may be lagging behind in updates due to network delays or other factors.
+
+- **Partition Tolerance**
+
+    Partition tolerance means that the system continues to operate even when there is a network partition. In other words, the system can continue to function when some nodes are cut off from the rest of the network.
 
 ### Trade-offs
 The CAP theorem forces developers to make trade-offs when building distributed systems. For example, if you prioritize consistency and partition tolerance, you may sacrifice availability. Similarly, if you prioritize availability and partition tolerance, you may sacrifice consistency.
