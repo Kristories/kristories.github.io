@@ -10,6 +10,7 @@ title:  "The CAP Theorem"
 [The CAP theorem](https://en.wikipedia.org/wiki/CAP_theorem) is a fundamental concept in distributed systems that explains the trade-offs between consistency, availability, and partition tolerance. It is a fundamental concept that every software engineer should understand when designing and building distributed systems.
 
 ### What is the CAP Theorem?
+
 The CAP theorem was first introduced by computer scientist Eric Brewer in 2000. It states that in a distributed system, you can only have two out of the following three properties:
 
 - **Consistency**
